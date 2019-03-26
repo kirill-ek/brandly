@@ -1,0 +1,23 @@
+.header-pagination-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 78px;
+  list-style: none;
+
+  &__label {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: @white-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__input:checked + &__label {
+      width: 10px;
+      height: 10px;
+      background-color: #434449;
+      border: 2px solid @white-color;
+  }
+}

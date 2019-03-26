@@ -1,0 +1,143 @@
+.products-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__link {
+    position: relative;
+    width: 370px;
+    background-color: #5a5c66;
+    background-repeat: no-repeat;
+    color: @white-color;
+    text-decoration: none;
+  }
+
+  &__link--men,
+  &__link--woman,
+  &__link--watches {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-bottom: 30px;
+    font-family: @openSans;
+    font-size: 40px;
+    line-height: @line-height;
+    font-weight: @light;
+    font-style: italic;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 310px;
+      height: 350px;
+      border: 2px solid @white-color;
+      top: 31px;
+      left: 28px;
+    }
+  }
+
+  &__link--men {
+    background:
+      url("../images/color_overlay.png"),
+      url("../images/lp-men.png");
+
+    &:hover {
+      background-image: url("../images/lp-men.png");
+    }
+
+    &:active {
+      background-image: url("../images/lp-men.png");
+      color: @red-color;
+    }
+  }
+
+  &__link--woman {
+    background:
+      url("../images/color_overlay.png"),
+      url("../images/lp-woman.png");
+
+    &:hover {
+      background-image: url("../images/lp-woman.png");
+    }
+
+    &:active {
+      background-image: url("../images/lp-woman.png");
+      color: @red-color;
+    }
+  }
+
+  &__link--watches {
+    background:
+      url("../images/color_overlay.png"),
+      url("../images/lp-watches.png");
+
+    &:hover {
+      background-image: url("../images/lp-watches.png");
+    }
+
+    &:active {
+      background-image: url("../images/lp-watches.png");
+      color: @red-color;
+    }
+  }
+
+  &__link--new-sale,
+  &__link--sale {
+    padding-top: 129px;
+    padding-bottom: 129px;
+    font-family: @lato;
+    font-size: 45px;
+    line-height: 53px;
+    font-weight: @black;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 192px;
+      height: 1px;
+      background-color: @white-color;
+      left: 189px;
+    }
+
+    &:before {
+      top: 116px;
+    }
+
+    &:after {
+      bottom: 116px;
+    }
+  }
+
+  &__link--new-sale {
+    width: 570px;
+    background:
+      url("../images/color_overlay.png"),
+      url("../images/lp-new.png");
+
+    &:hover {
+      background-image: url("../images/lp-new.png");
+    }
+
+    &:active {
+      background-image: url("../images/lp-new.png");
+      color: @red-color;
+    }
+  }
+
+  &__link--sale {
+    width: 570px;
+    background:
+      url("../images/color_overlay.png"),
+      url("../images/lp-sale.png");
+    text-transform: uppercase;
+
+    &:hover {
+      background-image: url("../images/lp-sale.png");
+    }
+
+    &:active {
+      background-image: url("../images/lp-sale.png");
+      color: @red-color;
+    }
+  }
+}

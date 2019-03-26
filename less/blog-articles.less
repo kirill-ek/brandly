@@ -1,0 +1,117 @@
+.blog-articles {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: @width;
+  padding-bottom: 59px;
+
+  &__item {
+    width: 570px;
+    text-align: left;
+  }
+
+  &__photo {
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 18px;
+    font-family: @lato;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: @bold;
+    color: @red-color;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 22px;
+    font-family: @lato;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: @normal;
+    color: @darkGray-color;
+  }
+
+  &__content {
+    padding-top: 27px;
+    padding-right: 12px;
+    padding-bottom: 29px;
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: @openSans;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: @light;
+    color: @darkGray-color;
+    border-top: 1px solid #ecf0f1;
+    border-bottom: 1px solid #ecf0f1;
+  }
+
+  &__more-link {
+    display: inline-block;
+    width: 168px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    text-align: center;
+    font-family: @openSans;
+    font-size: 16px;
+    font-weight: @bold;
+    text-decoration: none;
+    color: @darkGray-color;
+    text-transform: uppercase;
+    border: 1px solid @darkGray-color;
+
+    &:hover {
+      color: @white-color;
+      background-color: @darkGray-color;
+    }
+
+    &:active {
+      color: @red-color;
+      background-color: @darkGray-color;
+    }
+  }
+
+  &__control {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: none;
+    border-top: 5px solid #c1c1c1;
+    border-right: none;
+    border-left: 5px solid #c1c1c1;
+    border-bottom: none;
+
+    &--left {
+      top: 170px;
+      left: -50px;
+      transform: rotate(-45deg);
+    }
+
+    &--right {
+      top: 170px;
+      right: -50px;
+      transform: rotate(135deg);
+    }
+
+    &:hover {
+      border-top: 5px solid @red-color;
+      border-left: 5px solid @red-color;
+      cursor: pointer;
+    }
+  }
+
+
+
+
+
+
+
+
+
+}

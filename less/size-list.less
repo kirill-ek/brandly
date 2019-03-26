@@ -1,0 +1,29 @@
+.size-list {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+  padding: 0;
+  
+  &__item {
+    width: 69px;
+    text-align: center;
+    list-style: none;
+    border: 1px solid @darkGray-color;
+  }
+  
+  &__label {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    font-family: @openSans;
+    font-size: 16px;
+    font-weight: 700;
+    color: @darkGray-color;
+    cursor: pointer;
+  }
+  
+  &__input:checked + &__label {
+    color: @white-color;
+    background-color: @darkGray-color;
+  }
+}

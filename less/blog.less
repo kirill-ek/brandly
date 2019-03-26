@@ -1,0 +1,37 @@
+.blog {
+  width: @width;
+  padding-top: 97px;
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 106px;
+    font-size: 40px;
+    line-height: @line-height;
+    font-family: @openSans;
+    font-weight: @light;
+    font-style: italic;
+    color: @darkGray-color;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: @red-line-w;
+      height: @red-line-h;
+      background-color: @red-color;
+      left: 528px;
+    }
+
+    &:before {
+      top: -38px;
+    }
+
+    &:after {
+      top: 56px;
+    }
+  }
+
+}

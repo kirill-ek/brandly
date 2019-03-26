@@ -1,0 +1,21 @@
+.footer {
+  position: relative;
+  max-width: @max-width;
+  padding-top: 70px;
+  padding-bottom: 235px;
+  background-image:
+    url("../images/footer-color-overlay.png"),
+    url("../images/bg_footer.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  
+  &:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    background-image: url("../images/heart.png");
+    top: 323px;
+    left: 47%;
+  }
+}

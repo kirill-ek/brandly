@@ -1,0 +1,75 @@
+.trend-items-info {
+  display: flex;
+  justify-content: space-between;
+  color: #777777;
+
+  &__photo {
+    line-height: 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 18px;
+    font-family: @lato;
+    font-size: 30px;
+    line-height: normal;
+    font-weight: @bold;
+    text-transform: uppercase;
+    color: @red-color;
+  }
+
+  &__wrapper {
+    width: 570px;
+    padding: 0;
+    padding-top: 23px;
+    text-align: left;
+  }
+
+  &__site-section {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 47px;
+    font-family: @openSans;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: @normal;
+    letter-spacing: 1.8px;
+  }
+
+  &__description,
+  &__tip,
+  &__tip-text {
+    font-family: @lato;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.8px;
+  }
+
+  &__description {
+    position: relative;
+    margin-bottom: 25px;
+    letter-spacing: 1.8px;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background-color: @black-color;
+      top: -23px;
+      left: 0;
+    }
+  }
+
+  &__tip {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__tip-text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 62px;
+  }
+}

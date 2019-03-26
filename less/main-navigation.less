@@ -1,0 +1,29 @@
+.main-navigation {
+  width: 700px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-left: 21px;
+
+    list-style: none;
+  }
+
+  &__link {
+    font-family: @openSans;
+    font-size: 18px;
+    line-height: 19px;
+    color: @white-color;
+    text-decoration: none;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+
+  &__link:active {
+    color: @red-color;
+  }
+}

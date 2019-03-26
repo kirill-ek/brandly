@@ -1,0 +1,33 @@
+.trend-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+  padding: 0;
+  list-style: none;
+
+  &__shop-link,
+  &__size-link {
+    display: inline-block;
+    width: 168px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    text-align: center;
+    font-family: @openSans;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid @darkGray-color;
+    color: @darkGray-color;
+    text-decoration: none;
+
+    &:hover {
+      background-color: @darkGray-color;
+      color: @white-color;
+    }
+
+    &:active {
+      background-color: @darkGray-color;
+      color: @red-color;
+    }
+  }
+}
